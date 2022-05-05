@@ -14,27 +14,6 @@ class RepoDetailWidget extends StatelessWidget {
       padding: EdgeInsets.all(20),
       child: Column(
         children:[
-          Container(
-      margin: EdgeInsets.symmetric(horizontal: 4),
-      height: 45,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.all(Radius.circular(8)),
-      ),
-      child: TextField(
-        cursorColor: Colors.black54,
-        style: TextStyle(
-          color: Colors.black54,
-        ),
-        decoration: InputDecoration(
-          contentPadding: EdgeInsets.all(12),
-
-          border: InputBorder.none,
-          hintText: "Search",
-        ),
-      ),
-    ),
-    SizedBox(height: 20,),
            Expanded(
           child: ListView.separated(
               itemBuilder: (context, index) {

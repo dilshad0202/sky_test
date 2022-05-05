@@ -26,7 +26,7 @@ class _UserScreenState extends State<UserScreen> {
       ),
       body: Consumer<SearchProvider>(
         builder: (context, provider, child) {
-          return  provider.currentTab == CurrentTab.REPOSITORY ? UserPofileWidget() :RepoDetailWidget();
+          return  provider.currentTab == CurrentTab.PROFILE ? UserPofileWidget() :RepoDetailWidget();
         }
       ),
     );
